@@ -3,5 +3,13 @@
 ---
 @charset "utf-8";
 
-@import "header";
 
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "header"
+;
+
+* {
+    margin: 0;
+    padding: 0;
+}
