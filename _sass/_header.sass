@@ -4,12 +4,12 @@ header
     background-color: gray
     text-transform: uppercase
     font-family: Montserrat
-    background: url("../img/big_bg_head.jpeg") no-repeat center center fixed
+    background: url("../img/big_bg_head.jpeg") no-repeat center center 
     background-size: cover
     
     .hero-text
-        height: 200px
-        width: 400px
+        height: auto
+        width: 26%
         float: left
         margin-top: 10%
     
@@ -63,5 +63,11 @@ ul
                 text-decoration: none
                 color: white
                 
-    
+$bp-sm: 320px
+$bp-md: 640px
+$bp-lg: 1280px
             
+@mixin media ($bp-sm)
+    header
+        h1
+            font-size: 60px
