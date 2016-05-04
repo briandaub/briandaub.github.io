@@ -41,19 +41,31 @@ $bp-md: 640px
 $bp-lg: 1280px
 $bp-xl: 1600px
 
-@media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
+@media screen and (max-width: #{$bp-sm})
+    .skillset
+        .skills 
+            margin: 50px 0
+            
+            .skill
+                margin: 10px 0
+                
+            .skill-bar
+                width: 200px
+
+@media screen and (min-width: #{$bp-sm + 1px}) and (max-width: #{$bp-md - 1px})
     .skillset
     
         .skills
+            margin: 50px 0
         
             h3
                 font-size: 18px
             
             .skill
-                margin: 10px 20px
+                margin: 10px 0px
                 
             .skill-bar
-                width: 200px
+                width: 300px
                 
 @media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
     .skillset
@@ -68,3 +80,19 @@ $bp-xl: 1600px
                 
             .skill-bar
                 width: 300px
+                
+                
+@media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
+    .skillset
+    
+        .skills
+        
+            h3
+                font-size: 20px
+            
+            .skill
+                margin: 10px 20px
+                
+            .skill-bar
+                width: 400px                
+                
