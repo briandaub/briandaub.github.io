@@ -1,5 +1,5 @@
 header
-    min-height: 700px
+    min-height: 600px
     width: 100%
     background-color: gray
     text-transform: uppercase
@@ -9,7 +9,7 @@ header
     
     .hero-text
         height: auto
-        width: 26%
+        width: 50%
         float: left
         margin-top: 10%
     
@@ -23,7 +23,7 @@ header
         text-align: center
         
         img
-            margin-top: 180px
+            margin: 180px 0 20px
             height: 50px
             width: 60px
             
@@ -66,8 +66,50 @@ ul
 $bp-sm: 320px
 $bp-md: 640px
 $bp-lg: 1280px
-            
-@mixin media ($bp-sm)
+$bp-xl: 1600px
+
+@media screen and (max-width: #{$bp-sm - 1px})
     header
-        h1
-            font-size: 60px
+        min-height: 200px
+        background: url("../img/sm_bg_head.jpg") no-repeat center center 
+        background-size: cover
+    
+        .hero-text
+            font-size: 12.3vw
+            width: 70%
+            
+        ul
+            visibility: hidden
+            
+            
+@media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
+    header
+        min-height: 200px
+        background: url("../img/sm_bg_head.jpg") no-repeat center center 
+        background-size: cover
+        
+        .hero-text
+            font-size: 12.3vw
+            width: 70%
+            
+        ul
+            visibility: hidden
+            
+            
+@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+    header
+        .hero-text
+            font-size: 9vw
+            width: 70%
+            
+                            
+                
+@media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
+    header
+        .hero-text
+            font-size: 6vw
+            width: 50%
+
+
+            
+            

@@ -42,7 +42,6 @@ var skills_obj = [
 ]
 
 $(document).ready(function () {
-  
     var list = $('.skills').html('<ul id="skill-list" class="list-group"></ul>').find('ul');
     for(var i = 0; i < skills_obj.length; i++){
         list.append("<li class='skill'>" + "<h3>" + skills_obj[i].title + "</h3>" + "<br />" +  "<div class='skill-bar'>" + "</div>" + "</li>");  
