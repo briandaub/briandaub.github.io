@@ -34,3 +34,37 @@
             width: 400px
             background-color: gray
             height: 5px
+            
+            
+$bp-sm: 320px
+$bp-md: 640px
+$bp-lg: 1280px
+$bp-xl: 1600px
+
+@media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
+    .skillset
+    
+        .skills
+        
+            h3
+                font-size: 18px
+            
+            .skill
+                margin: 10px 20px
+                
+            .skill-bar
+                width: 200px
+                
+@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+    .skillset
+    
+        .skills
+        
+            h3
+                font-size: 20px
+            
+            .skill
+                margin: 10px 20px
+                
+            .skill-bar
+                width: 300px
