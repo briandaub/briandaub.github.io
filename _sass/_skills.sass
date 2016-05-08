@@ -15,8 +15,6 @@
             margin: 20px auto
     
     .skill-list
-        
-        .list-group
             
         .bar-title
             text-align: left
@@ -34,7 +32,6 @@
         
         .bar-inner
             height: 100%
-            width: 70%
             background: #949276
             
             &::before
@@ -43,47 +40,112 @@
                 font-size: 23px
             
         .html
+            width: 90%
+            animation: html 2s ease-out
+
             
             &::before
                 content: "HTML5"
+        
+        @keyframes html
+            0%
+                width: 0%
+            100%
+                width: 90%
 
         
         .css
+            width: 85%
+            animation: css 2s ease-out
             
             &::before
                 content: "CSS3"
-
+                
+        @keyframes css
+            0%
+                width: 0%
+            100%
+                width: 85%
                 
         .bootstrap
+            width: 75%
+            animation: bootstrap 2s ease-out
             
             &::before
                 content: "Bootstrap"
+                
+        @keyframes bootstrap
+            0%
+                width: 0%
+            100%
+                width: 75%
 
                 
         .js
+            width: 80%    
+            animation: js 2s ease-out
             
             &::before
                 content: "JavaScript"
                 
+        @keyframes js
+            0%
+                width: 0%
+            100%
+                width: 80%
+                
         .jquery
+            width: 75%
+            animation: jquery 2s ease-out
             
             &::before
                 content: "jQuery"
                 
+        @keyframes jquery
+            0%
+                width: 0%
+            100%
+                width: 75%
+                
         .git
+            width: 70%
+            animation: git 2s ease-out
             
             &::before
                 content: "Git/GitHub"
+               
+        @keyframes git
+            0%
+                width: 0%
+            100%
+                width: 70%
 
         .ps
+            width: 70%
+            animation: ps 2s ease-out
             
             &::before
                 content: "Photoshop"
+                
+        @keyframes ps
+            0%
+                width: 0%
+            100%
+                width: 70%
             
         .is
+            width: 65%
+            animation: is 2s ease-out
             
             &::before
                 content: "Illustrator"
+                
+        @keyframes is
+            0%
+                width: 0%
+            100%
+                width: 65%
+                
 
             
 $bp-sm: 320px
