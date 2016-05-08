@@ -1,22 +1,22 @@
 var skills_obj = [
     {
       'title': 'HTML5',
-      'xp': 7,
+      'xp': 8,
       'length': 9
     },
     {
       'title': 'CSS3',
-      'xp': 6,
+      'xp': 7,
       'length': 9
     },
     {
       'title': 'Bootstrap',
-      'xp': 6,
+      'xp': 5,
       'length': 9
     },
     {
       'title': 'JavaScript',
-      'xp': 7,
+      'xp': 6,
       'length': 9
     },
     {
@@ -26,7 +26,7 @@ var skills_obj = [
     },
     {
       'title': 'Git/GitHub',
-      'xp': 6,
+      'xp': 7,
       'length': 9
     },
     {
@@ -36,14 +36,14 @@ var skills_obj = [
     },
     {
       'title': 'Illustrator',
-      'xp': 6,
+      'xp': 4,
       'length': 9
     }
 ]
 
 $(document).ready(function () {
-    var list = $('.skills').html('<ul id="skill-list" class="list-group"></ul>').find('ul');
+    var list = $('.skill-list').html('<ul class="list-group"></ul>').find('ul');
     for(var i = 0; i < skills_obj.length; i++){
-        list.append("<li class='skill'>" + "<h3>" + skills_obj[i].title + "</h3>" + "<br />" +  "<div class='skill-bar'>" + "</div>" + "</li>");  
+        list.append("<h3 class='bar-title'>" + skills_obj[i].title + "</h3>" + "<li class='bar-outter' >" + "<div class='bar-inner' data-percent='" + skills_obj[i].xp  + "0%' >" +  "</div>" + "</li>");  
     }
 });

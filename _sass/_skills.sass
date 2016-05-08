@@ -1,7 +1,6 @@
 .skillset
     background: #f2f2f2
     height: auto
-    margin: 0 auto
     text-align: center
     
     h2
@@ -14,26 +13,42 @@
             content: " "
             width: 150px
             margin: 20px auto
-      
-        
     
-    .skills
-        margin: 50px 20px
-        text-align: center
+    .skill-list
+        float: left
+        margin: 50px auto
         
-        .skill
-            text-align: left
-            margin: 10px 70px
-        
-        .skill-list
+        .list-group
+            width: 99%
             margin: 0 auto
-        
-        .skill-bar
-            float: none
+            
+        .bar-title
+            text-align: left
             display: block
-            width: 400px
-            background-color: gray
+            margin: 50px 0 0
+            display: none
+            
+        .bar-outter
+            float: left
+            display: inline-block
+            text-align: left
+            margin: 40px 60px 40px 0
+            background-color: #ccc
             height: 5px
+            width: 400px
+
+        
+        .bar-inner
+            height: 100%
+            width: 70%
+            background: #949276
+            
+            &::before
+                content: "HTML5"
+                position: relative
+                top: -40px
+                font-size: 23px
+
             
             
 $bp-sm: 320px
