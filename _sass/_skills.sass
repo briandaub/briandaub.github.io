@@ -240,7 +240,7 @@ $bp-xl: 1600px
                             left: 160px
                 
                 
-@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+@media screen and (min-width: #{$bp-md}) and (max-width: 999px)
     .skillset
     
         .skill-list
@@ -286,6 +286,53 @@ $bp-xl: 1600px
                     .is
                         &:after
                             left: 300px
+                            
+@media screen and (min-width: 1000px) and (max-width: #{$bp-lg - 1px})
+    .skillset
+    
+        .skill-list
+        
+            h3
+                font-size: 20px
+            
+            .list-group
+                margin: 10px 20px
+                
+                .bar-outter
+                    width: 350px
+                    margin: 40px 20px
+                
+                    .html
+                        &:after
+                            left: 250px
+                    
+                    .css
+                        &:after
+                            left: 265px
+                            
+                    .bootstrap
+                        &:after
+                            left: 226px
+                            
+                    .js
+                        &:after
+                            left: 217px
+                            
+                    .jquery
+                        &:after
+                            left: 257px
+                            
+                    .git
+                        &:after
+                            left: 216px
+            
+                    .ps
+                        &:after
+                            left: 214px
+                        
+                    .is
+                        &:after
+                            left: 230px
                 
                 
 @media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
