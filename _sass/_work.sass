@@ -37,17 +37,44 @@
         width: 50%
         height: 400px
         
+        .tags
+            display: block
+            margin: 30px 0 0
+
+            
+            .tag
+                padding: 5px 10px
+                margin: 5px
+                border: 2px solid #949276
+            
+            .tag:first-child
+                margin-left: 0
+                
+        .list-desc
+            p
+                font-size: 16px
+            
+        .view-project
+            display: inline-block
+            margin: 30px 0 0
+            padding: 10px 15px
+            background: #949276
+            color: white
+            border: none
+            
     .slideshow
         width: 100%
         height: 200px
         margin: 0
         padding: 0
-        overflow: hidden
+        overflow-x: scroll
+        overflow-y: hidden
         
         .slides
             float: left
             width: 1800px
             height: auto
+            
 
         li
             float: left
@@ -58,6 +85,3 @@
         img
             background: #ccc
             overflow: hidden
-            
-            
-            
