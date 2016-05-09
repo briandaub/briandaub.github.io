@@ -16,19 +16,12 @@
     
     .skill-list
             
-        .bar-title
-            text-align: left
-            display: block
-            margin: 40px 0 0
-            display: none
-            
         .bar-outter
             text-align: left
             margin: 40px 50px
             background-color: #ccc
             height: 5px
             width: 400px
-
         
         .bar-inner
             height: 100%
@@ -38,14 +31,26 @@
                 position: relative
                 top: -40px
                 font-size: 23px
+
+            
+            &:after
+                position: relative
+                top: -40px
+
             
         .html
             width: 90%
             animation: html 2s ease-out
 
             
-            &::before
+            &:before
                 content: "HTML5"
+                
+            &:after
+                content: '90%'
+                left: 300px
+                
+           
         
         @keyframes html
             0%
@@ -60,6 +65,9 @@
             
             &::before
                 content: "CSS3"
+            &:after
+                content: '85%'
+                left: 316px
                 
         @keyframes css
             0%
@@ -73,6 +81,9 @@
             
             &::before
                 content: "Bootstrap"
+            &:after
+                content: '75%'
+                left: 277px
                 
         @keyframes bootstrap
             0%
@@ -87,6 +98,9 @@
             
             &::before
                 content: "JavaScript"
+            &:after
+                content: '80%'
+                left: 267px
                 
         @keyframes js
             0%
@@ -100,6 +114,9 @@
             
             &::before
                 content: "jQuery"
+            &:after
+                content: '75%'
+                left: 310px
                 
         @keyframes jquery
             0%
@@ -113,6 +130,9 @@
             
             &::before
                 content: "Git/GitHub"
+            &:after
+                content: '70%'
+                left: 268px
                
         @keyframes git
             0%
@@ -126,6 +146,9 @@
             
             &::before
                 content: "Photoshop"
+            &:after
+                content: '70%'
+                left: 267px
                 
         @keyframes ps
             0%
@@ -139,6 +162,9 @@
             
             &::before
                 content: "Illustrator"
+            &:after
+                content: '65%'
+                left: 279px
                 
         @keyframes is
             0%
