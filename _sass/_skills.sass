@@ -181,7 +181,7 @@ $bp-xl: 1600px
 
 @media screen and (max-width: #{$bp-sm})
     .skillset
-        .skills 
+        .skill-list
             margin: 50px 0
             
             .skill
@@ -193,31 +193,67 @@ $bp-xl: 1600px
 @media screen and (min-width: #{$bp-sm + 1px}) and (max-width: #{$bp-md - 1px})
     .skillset
     
-        .skills
+        .skill-list
             margin: 50px 0
         
             h3
                 font-size: 18px
             
-            .skill
+            .list-group
                 margin: 10px 0px
                 
-            .skill-bar
-                width: 300px
+                .bar-outter
+                    width: 280px
+                    margin: 40px 0
+    
+                
+                    .html
+                        &:after
+                            left: 180px
+                    
+                    .css
+                        &:after
+                            left: 194px
+                            
+                    .bootstrap
+                        &:after
+                            left: 156px
+                            
+                    .js
+                        &:after
+                            left: 147px
+                            
+                    .jquery
+                        &:after
+                            left: 187px
+                            
+                    .git
+                        &:after
+                            left: 147px
+            
+                    .ps
+                        &:after
+                            left: 145px
+                        
+                    .is
+                        &:after
+                            left: 160px
+                
                 
 @media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
     .skillset
     
-        .skills
+        .skill-list
         
             h3
                 font-size: 20px
             
-            .skill
+            .list-group
                 margin: 10px 20px
                 
-            .skill-bar
-                width: 300px
+                .bar-outter
+                    width: 280px
+                    margin: 40px 0
                 
                 
 @media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
