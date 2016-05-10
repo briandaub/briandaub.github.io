@@ -19,8 +19,8 @@
         
         .hero-img
             position: relative
-            top: 56px
-            width: 80%
+            top: 45px
+            width: 70%
             height: auto
             left: 50px
         
@@ -89,3 +89,41 @@
         img
             background: #ccc
             overflow: hidden
+            
+            
+            
+$bp-sm: 320px
+$bp-md: 640px
+$bp-lg: 1000px
+$bp-xl: 1280px
+$bp-xxl: 1600px
+
+@media screen and (max-width: #{$bp-sm - 1px})
+
+@media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
+    .portfolio
+        .hero
+            display: none
+        .details
+            float: none
+            width: 100%
+            height: 0
+            
+            h2
+                font-size: 25px
+                
+            .tags
+                .tag
+                    margin: 2px
+
+@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+
+@media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
+    .portfolio
+        .hero
+            .monitor
+                top: -192px
+
+@media screen and (min-width: #{$bp-xl}) and (max-width: #{$bp-xxl - 1px})
+
+
