@@ -117,7 +117,7 @@ $bp-xxl: 1600px
                     margin: 2px
                     padding: 5px
 
-@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+@media screen and (min-width: #{$bp-md}) and (max-width: 734px)
     .portfolio
         .hero
             .hero-img
@@ -125,7 +125,7 @@ $bp-xxl: 1600px
                 left: 55px
                 
             .monitor
-                top: -90px
+                top: -99px
             
         .details
             .tags
@@ -133,20 +133,23 @@ $bp-xxl: 1600px
                     margin: 1px
                     padding: 5px
                     
-@media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-md - 1px})
+@media screen and (min-width: 735px) and (max-width: #{$bp-lg - 1px})
     .portfolio
         .hero
             width: 45%
             height: 0
             
+            .hero-img
+                top: 70
             .monitor
-                top: -138px
+                top: -100px
                 
         .details
             width: 55%
             .tags
                 .tag
                     margin: 1px
+                    padding: 5px
                 
 @media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
     .portfolio
