@@ -59,3 +59,23 @@
             background: #949276
             color: white
             font-size: 16px
+            
+            
+$bp-sm: 320px
+$bp-md: 640px
+$bp-lg: 1000px
+$bp-xl: 1280px
+$bp-xxl: 1600px
+
+@media screen and (max-width: #{$bp-sm - 1px})
+
+@media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
+
+    .contact-form
+        width: 80%
+
+@media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
+
+@media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
+
+@media screen and (min-width: #{$bp-xl}) and (max-width: #{$bp-xxl - 1px})
