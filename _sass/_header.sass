@@ -48,7 +48,7 @@ ul
     float: right
     list-style-type: none
     text-decoration: none
-    font-size: 12px
+    font-size: 14px
     
     
     li 
@@ -76,6 +76,12 @@ $bp-xl: 1600px
             
         ul
             visibility: hidden
+        
+    .navbar
+        .navbar-header
+            .navbar-brand
+                img
+                    margin: 0
             
             
 @media screen and (min-width: #{$bp-sm}) and (max-width: #{$bp-md - 1px})
@@ -90,13 +96,25 @@ $bp-xl: 1600px
             
         ul
             visibility: hidden
-            
+    
+    .navbar
+        .navbar-header
+            .navbar-brand
+                img
+                    margin: 0    
             
 @media screen and (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1px})
     header
         .hero-text
             font-size: 7vw
+        .container
+            width: 80%
             
+        ul
+            font-size: 16px
+            
+            li
+                margin: 25px 15px 15px
                             
                 
 @media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
