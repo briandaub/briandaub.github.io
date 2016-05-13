@@ -50,7 +50,7 @@
         height: 400px
         
         .tags
-            display: block
+            display: table
             margin: 30px 0 0
 
             
@@ -125,9 +125,13 @@ $bp-xxl: 1600px
                 
             .tags
                 .tag
-                    margin: 2px
-                    padding: 5px
-
+                    margin: 4px
+                    padding: 4px
+                    display: inline-block
+                    
+                .tag:last-child
+                    margin-left: 0
+                    
 @media screen and (min-width: #{$bp-md}) and (max-width: 734px)
     .portfolio
         .hero
@@ -141,8 +145,12 @@ $bp-xxl: 1600px
         .details
             .tags
                 .tag
-                    margin: 1px
+                    margin: 4px
                     padding: 5px
+                    display: inline-block
+                    
+                .tag:last-child
+                    margin-left: 0                    
                     
 @media screen and (min-width: 735px) and (max-width: #{$bp-lg - 1px})
     .portfolio
@@ -159,8 +167,12 @@ $bp-xxl: 1600px
             width: 55%
             .tags
                 .tag
-                    margin: 1px
+                    margin: 4px
                     padding: 5px
+                    display: inline-block
+                    
+                .tag:last-child
+                    margin-left: 0
                 
 @media screen and (min-width: #{$bp-lg}) and (max-width: #{$bp-xl - 1px})
     .portfolio
