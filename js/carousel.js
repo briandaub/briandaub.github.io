@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var i = 1, length = 6;
+    var i = 2, length = 6;
     var timer = setInterval(function(){
         $('.slideshow ul').animate({marginLeft:-300},1000, function() {
             $(this).find("li:last").after($(this).find("li:first"));
