@@ -16,7 +16,9 @@ $(document).ready(function() {
 	},5000);
 	
 	$('.slide1').on('click', function(){
-	    $('.quote').addClass('active').removeClass('hidden');
+	    $('.quote').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	    $('.weather').addClass('hidden').removeClass('active');
 	    $('.tribute').addClass('hidden').removeClass('active');
 	    $('.calc').addClass('hidden').removeClass('active');
@@ -26,7 +28,9 @@ $(document).ready(function() {
 	
 	$('.slide2').on('click', function(){
 	    $('.quote').addClass('hidden').removeClass('active');
-	    $('.weather').addClass('active').removeClass('hidden');
+	    $('.weather').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	    $('.tribute').addClass('hidden').removeClass('active');
 	    $('.calc').addClass('hidden').removeClass('active');
 	    $('.timer').addClass('hidden').removeClass('active');
@@ -36,7 +40,9 @@ $(document).ready(function() {
 	$('.slide3').on('click', function(){
 	    $('.quote').addClass('hidden').removeClass('active');
 	    $('.weather').addClass('hidden').removeClass('active');
-	    $('.tribute').addClass('active').removeClass('hidden');
+	    $('.tribute').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	    $('.calc').addClass('hidden').removeClass('active');
 	    $('.timer').addClass('hidden').removeClass('active');
 	    $('.wiki').addClass('hidden').removeClass('active');
@@ -46,7 +52,9 @@ $(document).ready(function() {
 	    $('.quote').addClass('hidden').removeClass('active');
 	    $('.weather').addClass('hidden').removeClass('active');
 	    $('.tribute').addClass('hidden').removeClass('active');
-	    $('.calc').addClass('active').removeClass('hidden');
+	    $('.calc').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	    $('.timer').addClass('hidden').removeClass('active');
 	    $('.wiki').addClass('hidden').removeClass('active');
 	});
@@ -56,7 +64,9 @@ $(document).ready(function() {
 	    $('.weather').addClass('hidden').removeClass('active');
 	    $('.tribute').addClass('hidden').removeClass('active');
 	    $('.calc').addClass('hidden').removeClass('active');
-	    $('.timer').addClass('active').removeClass('hidden');
+	    $('.timer').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	    $('.wiki').addClass('hidden').removeClass('active');
 	});
 
@@ -66,6 +76,8 @@ $(document).ready(function() {
 	    $('.tribute').addClass('hidden').removeClass('active');
 	    $('.calc').addClass('hidden').removeClass('active');
 	    $('.timer').addClass('hidden').removeClass('active');
-	    $('.wiki').addClass('active').removeClass('hidden');
+	    $('.wiki').fadeIn(1000, function() {
+	    	$(this).addClass('active');
+	    }).removeClass('hidden');
 	});
 });
