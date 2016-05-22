@@ -1,10 +1,12 @@
+$accent-color: #F44336
+
 header
     min-height: 600px
     width: 100%
     background-color: gray
     text-transform: uppercase
     font-family: Montserrat
-    background: url("../img/big_bg_head.jpeg") no-repeat center center 
+    background: url("../img/macbook-beer.jpg") no-repeat center center 
     background-size: cover
     
     .hero-text
@@ -29,8 +31,8 @@ header
             
     
 .navbar
-    background: transparent
-    margin-bottom: 150px
+    background: rgba(0,0,0,0.7)
+    height: 60px
 
     
 .navbar-header
@@ -38,30 +40,35 @@ header
 
 .navbar-brand
     float: left
+    margin: -6px 15px
     
     img
-        height: 40px
+        height: auto
         width: 40px
-        margin-left: 10px
-        
-        &:after
-            content: "Brian Daub"
-            
-ul
-    float: right
+        float: left
+
+#logo-tag    
+    float: left
+    font-size: 14px
+    margin: 15px 0 0 20px
+    font-weight: 200
+
+#navbar-links
     list-style-type: none
     text-decoration: none
     font-size: 14px
-    
-    
-    li 
-        display: inline-block
-        margin: 25px 
-
-        a:link, a:visited, a:hover, a:active
-            text-decoration: none
-            color: white
+    float: right
+            
+li 
+    display: inline-block
+    margin: 20px 45px 0
+    float: left
                 
+        
+    a:link, a:visited, a:hover, a:active
+        text-decoration: none
+        color: white
+                    
 $bp-sm: 320px
 $bp-md: 640px
 $bp-lg: 1280px
