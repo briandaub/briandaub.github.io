@@ -41,9 +41,20 @@ var skills_obj = [
     }
 ]
 
+//$(document).ready(function () {
+//    var list = $('.skill-list').html('<ul class="list-group"></ul>').find('ul');
+//    for(var i = 0; i < skills_obj.length; i++){
+//        list.append("<li class='bar-outter' >" + "<div class='bar-inner "  + skills_obj[i].id + "' data-percent='" + skills_obj[i].xp  + "%' >" +  "</div>" + "</li>");
+//    }
+//});
+
 $(document).ready(function () {
     var list = $('.skill-list').html('<ul class="list-group"></ul>').find('ul');
-    for(var i = 0; i < skills_obj.length; i++){
-        list.append("<li class='bar-outter' >" + "<div class='bar-inner "  + skills_obj[i].id + "' data-percent='" + skills_obj[i].xp  + "%' >" +  "</div>" + "</li>");
+    var column = $('.row').html('<div class="row"></div>');
+    for(var col = 0; col < 2; col++){
+      row.append('<div class="column"></div>');
+      for(var i = 0; i < skills_obj.length; i++){
+          list.append("<li class='bar-outter' >" + "<div class='bar-inner "  + skills_obj[i].id + "' data-percent='" + skills_obj[i].xp  + "%' >" +  "</div>" + "</li>");
+      }
     }
 });
